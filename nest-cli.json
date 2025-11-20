@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "builder": "webpack",
+    "webpack": true
+  },
+  "monorepo": true,
+  "root": "apps/gateway",
+  "sourceRoot": "apps/gateway/src",
+  "entryFile": "main",
+  "projects": {
+    "grpc-contracts": {
+      "type": "library",
+      "root": "libs/grpc-contracts",
+      "entryFile": "index",
+      "sourceRoot": "libs/grpc-contracts/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/grpc-contracts/tsconfig.lib.json"
+      }
+    },
+    "gateway": {
+      "type": "application",
+      "root": "apps/gateway",
+      "entryFile": "main",
+      "sourceRoot": "apps/gateway/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/gateway/tsconfig.app.json"
+      }
+    },
+    "hotreload": {
+      "type": "library",
+      "root": "libs/hotreload",
+      "entryFile": "index",
+      "sourceRoot": "libs/hotreload/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/hotreload/tsconfig.lib.json"
+      }
+    },
+    "users": {
+      "type": "application",
+      "root": "apps/users",
+      "entryFile": "main",
+      "sourceRoot": "apps/users/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/users/tsconfig.app.json"
+      }
+    }
+  }
+}

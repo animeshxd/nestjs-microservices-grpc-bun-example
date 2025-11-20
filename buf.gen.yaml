@@ -1,0 +1,12 @@
+version: v2
+clean: true
+
+managed:
+  enabled: true
+
+plugins:
+  # Go codegen for API server (ConnectRPC and standard Go Protobuf)
+  - remote: buf.build/community/stephenh-ts-proto:v2.6.1
+    out: libs/grpc-contracts/src/proto/gen
+    opt: nestJs=true
+    
