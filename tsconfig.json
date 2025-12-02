@@ -1,31 +1,44 @@
 {
-	"compilerOptions": {
-		"module": "esnext",
-		"moduleResolution": "bundler",
-		"resolvePackageJsonExports": true,
-		"esModuleInterop": true,
-		"isolatedModules": true,
-		"declaration": true,
-		"removeComments": true,
-		"emitDecoratorMetadata": true,
-		"experimentalDecorators": true,
-		"allowSyntheticDefaultImports": true,
-		"target": "esnext",
-		"sourceMap": true,
-		"outDir": "./dist",
-		"baseUrl": "./",
-		"incremental": true,
-		"skipLibCheck": true,
-		"strictNullChecks": true,
-		"forceConsistentCasingInFileNames": true,
-		"noImplicitAny": false,
-		"strictBindCallApply": false,
-		"noFallthroughCasesInSwitch": false,
-		"paths": {
-			"@app/grpc-contracts": ["libs/grpc-contracts/src"],
-			"@app/grpc-contracts/*": ["libs/grpc-contracts/src/*"],
-			"@app/hotreload": ["libs/hotreload/src"],
-			"@app/hotreload/*": ["libs/hotreload/src/*"],
-		}
-	}
+  "compilerOptions": {
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "esnext",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@app/grpc-contracts": [
+        "libs/grpc-contracts/src"
+      ],
+      "@app/grpc-contracts/*": [
+        "libs/grpc-contracts/src/*"
+      ],
+      "@app/hotreload": [
+        "libs/hotreload/src"
+      ],
+      "@app/hotreload/*": [
+        "libs/hotreload/src/*"
+      ],
+      "@app/validator": [
+        "libs/validator/src"
+      ],
+      "@app/validator/*": [
+        "libs/validator/src/*"
+      ]
+    }
+  }
 }

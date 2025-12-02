@@ -11,15 +11,6 @@
   "sourceRoot": "apps/gateway/src",
   "entryFile": "main",
   "projects": {
-    "grpc-contracts": {
-      "type": "library",
-      "root": "libs/grpc-contracts",
-      "entryFile": "index",
-      "sourceRoot": "libs/grpc-contracts/src",
-      "compilerOptions": {
-        "tsConfigPath": "libs/grpc-contracts/tsconfig.lib.json"
-      }
-    },
     "gateway": {
       "type": "application",
       "root": "apps/gateway",
@@ -27,6 +18,15 @@
       "sourceRoot": "apps/gateway/src",
       "compilerOptions": {
         "tsConfigPath": "apps/gateway/tsconfig.app.json"
+      }
+    },
+    "grpc-contracts": {
+      "type": "library",
+      "root": "libs/grpc-contracts",
+      "entryFile": "index",
+      "sourceRoot": "libs/grpc-contracts/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/grpc-contracts/tsconfig.lib.json"
       }
     },
     "hotreload": {
@@ -45,6 +45,15 @@
       "sourceRoot": "apps/users/src",
       "compilerOptions": {
         "tsConfigPath": "apps/users/tsconfig.app.json"
+      }
+    },
+    "validator": {
+      "type": "library",
+      "root": "libs/validator",
+      "entryFile": "index",
+      "sourceRoot": "libs/validator/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/validator/tsconfig.lib.json"
       }
     }
   }
